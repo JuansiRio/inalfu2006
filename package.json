@@ -1,0 +1,35 @@
+{
+  "name": "10xbuilder-code",
+  "version": "1.0.0",
+  "description": "Landing page veterinaria con TailwindCSS y JavaScript Vanilla",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "GNDX"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lab10-org/10X-builder-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lab10-org/10X-builder-code/issues"
+  },
+  "homepage": "https://ev0.gndx.dev",
+  "contributors": [
+    {
+      "name": "Oscar Barajas @gndx",
+      "email": "oscar@gndx.dev",
+      "url": "https://gndx.dev"
+    }
+  ],
+  "type": "commonjs",
+  "scripts": {
+    "css:watch": "tailwindcss -i ./src/styles/input.css -o ./public/assets/css/styles.css --watch",
+    "css:build": "tailwindcss -i ./src/styles/input.css -o ./public/assets/css/styles.css --minify",
+    "dev": "npm run css:watch",
+    "build": "npm run css:build"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
