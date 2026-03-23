@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --verde-inalfu-principal: #1b7c41;
+    --verde-inalfu-oscuro: #11522a;
+    --fondo-inalfu: #fbf9f1;
+    --texto-inalfu: #212121;
+  }
+}
+
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center rounded-lg bg-emerald-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:ring-offset-2;
+    @apply inline-flex items-center justify-center rounded-lg bg-inalfu-600 px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-inalfu-800 focus:outline-none focus:ring-2 focus:ring-inalfu-300 focus:ring-offset-2 focus:ring-offset-inalfu-fondo;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-200;
+    @apply inline-flex items-center rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-inalfu-600 hover:text-inalfu-800 focus:outline-none focus:ring-2 focus:ring-inalfu-200;
   }
 
   .card {
@@ -21,6 +30,15 @@
 
   .card-text {
     @apply mt-2 text-slate-700;
+  }
+
+  /* Hero principal — The Last INALFU */
+  .hero-title {
+    @apply font-display text-[2.75rem] font-semibold leading-[1.08] tracking-tight text-inalfu-texto sm:text-6xl md:text-[3.5rem];
+  }
+
+  .hero-cta {
+    @apply btn-primary min-w-[14rem] px-10 py-4 text-base shadow-md hover:shadow-lg;
   }
 }
 

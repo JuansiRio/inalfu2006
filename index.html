@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Clinica veterinaria con atencion profesional y humana. Agenda tu cita, contactanos por WhatsApp o llamanos."
+      content="Encuentro de egresados The Last INALFU — 20 años después. Convocatoria, información del evento y grupo oficial de WhatsApp. Si hiciste parte de esa época, este encuentro es para ti."
     />
-    <title>VitalPaws | Cuidamos a quien mas quieres</title>
+    <title>The Last INALFU — 20 años después | Encuentro de egresados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./public/assets/css/styles.css" />
   </head>
-  <body class="bg-slate-50 text-slate-800 antialiased">
+  <body class="bg-inalfu-fondo text-inalfu-texto antialiased">
     <a
       href="#contenido-principal"
-      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-emerald-600 focus:px-4 focus:py-2 focus:text-white"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-inalfu-600 focus:px-4 focus:py-2 focus:text-white"
     >
       Saltar al contenido
     </a>
 
     <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <a href="#inicio" class="flex items-center gap-2 text-lg font-bold text-emerald-700">
-          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-emerald-100">VP</span>
-          VitalPaws
+        <a href="#sobre-el-encuentro" class="flex items-center gap-2 text-lg font-bold text-inalfu-700">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-inalfu-200 text-inalfu-700" aria-hidden="true">TL</span>
+          The Last INALFU
         </a>
 
         <button
@@ -42,142 +48,223 @@
           aria-label="Principal"
         >
           <ul class="flex flex-col gap-4 text-sm font-medium md:flex-row md:items-center md:gap-6">
-            <li><a class="nav-link hover:text-emerald-700" href="#servicios">Servicios</a></li>
-            <li><a class="nav-link hover:text-emerald-700" href="#beneficios">Beneficios</a></li>
-            <li><a class="nav-link hover:text-emerald-700" href="#testimonios">Testimonios</a></li>
-            <li><a class="nav-link hover:text-emerald-700" href="#contacto">Contacto</a></li>
+            <li><a class="nav-link hover:text-inalfu-700" href="#sobre-el-encuentro">Sobre el encuentro</a></li>
+            <li><a class="nav-link hover:text-inalfu-700" href="#invitados">Invitados</a></li>
+            <li><a class="nav-link hover:text-inalfu-700" href="#galeria">Galería</a></li>
+            <li><a class="nav-link hover:text-inalfu-700" href="#evento">Evento</a></li>
+            <li><a class="nav-link hover:text-inalfu-700" href="#anecdotas">Anécdotas</a></li>
+            <li><a class="nav-link hover:text-inalfu-700" href="#emprendimientos">Emprendimientos</a></li>
+            <li><a class="nav-link hover:text-inalfu-700" href="#whatsapp">WhatsApp</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="contenido-principal">
-      <section id="inicio" class="relative overflow-hidden bg-gradient-to-br from-emerald-100 via-teal-50 to-slate-50">
-        <div class="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-center md:py-24">
-          <div class="reveal space-y-6">
-            <p class="inline-flex rounded-full bg-white px-3 py-1 text-sm font-medium text-emerald-700 shadow-sm">
-              Atencion veterinaria integral
-            </p>
-            <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Cuidado experto para su salud y su tranquilidad.
-            </h1>
-            <p class="max-w-xl text-lg text-slate-700">
-              En VitalPaws combinamos tecnologia clinica y trato humano para que tu mascota reciba atencion segura,
-              rapida y cercana.
-            </p>
-            <div class="flex flex-wrap gap-3">
-              <a href="#contacto" class="btn-primary">Agendar cita</a>
-              <a href="https://wa.me/5215551234567" class="btn-secondary" target="_blank" rel="noopener noreferrer">
-                WhatsApp
-              </a>
-              <a href="tel:+525551234567" class="btn-secondary">Llamar</a>
-            </div>
-            <ul class="grid gap-2 text-sm text-slate-700 sm:grid-cols-3">
-              <li class="rounded-lg bg-white p-3 shadow-sm">+2,000 familias atendidas</li>
-              <li class="rounded-lg bg-white p-3 shadow-sm">Emergencias 24/7</li>
-              <li class="rounded-lg bg-white p-3 shadow-sm">Equipo certificado</li>
-            </ul>
+      <div
+        id="inicio-landing"
+        class="border-b border-inalfu-200/40 bg-gradient-to-b from-white via-inalfu-fondo/30 to-inalfu-fondo/50 py-6 sm:py-8"
+      >
+        <div class="mx-auto w-full max-w-5xl px-4 sm:px-6">
+          <div class="relative mx-auto overflow-hidden rounded-2xl shadow-sm ring-1 ring-inalfu-200/30">
+            <img
+              src="./public/assets/images/thelast.png"
+              alt="The Last INALFU — 20 años después"
+              class="block h-auto w-full max-w-4xl object-contain object-center md:mx-auto md:max-w-5xl"
+              width="1200"
+              height="240"
+              fetchpriority="high"
+            />
+            <div
+              class="pointer-events-none absolute inset-0 rounded-2xl shadow-[inset_0_0_28px_14px_rgb(251_249_241)] sm:shadow-[inset_0_0_40px_22px_rgb(251_249_241)]"
+              aria-hidden="true"
+            ></div>
           </div>
-          <div class="reveal rounded-3xl border border-emerald-200 bg-white p-8 shadow-xl">
-            <div class="space-y-4">
-              <h2 class="text-2xl font-bold text-slate-900">Primera consulta con evaluacion completa</h2>
-              <p class="text-slate-700">
-                Revisamos signos vitales, historial y plan preventivo para que sepas exactamente que necesita tu
-                mascota desde hoy.
+        </div>
+      </div>
+
+      <section
+        id="sobre-el-encuentro"
+        class="relative overflow-hidden bg-gradient-to-br from-white via-inalfu-fondo to-inalfu-100/60"
+        aria-labelledby="titulo-encuentro"
+      >
+        <h1 id="titulo-encuentro" class="sr-only">The Last INALFU — 20 años después, encuentro de egresados</h1>
+        <div class="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:gap-12 sm:px-6 md:grid-cols-2 md:items-center md:py-24">
+          <div class="reveal flex flex-col space-y-6">
+            <p class="w-full text-center text-xs font-semibold uppercase tracking-[0.2em] text-inalfu-800">
+              Sobre el encuentro
+            </p>
+            <div class="flex w-full flex-col items-center text-center">
+              <p
+                class="inline-flex items-center justify-center rounded-full border border-inalfu-200 bg-white/95 px-9 py-2.5 text-center text-lg font-medium tracking-wide text-inalfu-oscuro shadow-sm sm:px-11 sm:py-3 sm:text-xl"
+              >
+                20 años después
               </p>
-              <div class="rounded-xl bg-emerald-50 p-4">
-                <p class="text-sm font-medium text-emerald-800">Proxima cita disponible: Hoy mismo</p>
-                <p class="mt-1 text-sm text-emerald-700">Respuesta promedio por WhatsApp: menos de 5 minutos.</p>
-              </div>
+            </div>
+            <div class="max-w-xl space-y-3 text-base leading-relaxed text-inalfu-texto/88">
+              <p>
+                Eran los días en que el reggaetón aún era un tabú. Nosotros ya habíamos sobrevivido al cambio de milenio y a los Ovnis de
+                Sipirra; a las Torres Gemelas y al guarapo; al cariño de Don Javier y a la balacera de la peatonal. Sobrevivimos a las
+                identidades trigonométricas de Alba Lucía y hasta a las arepas con mortadela de Maira.
+              </p>
+              <p>
+                Buscábamos superar la selección natural mejorando el quiebre de cadera, cantando Ella y Yo como si nos estuviera pasando:
+                &ldquo;tú y ella en una cama, allá en Bonafont&rdquo;. Queríamos aprender, pero sobre todo quemar los cartuchos de la
+                juventud. En física nos dijeron que el amor no existe, pero en química nos volvió la duda. Gracias a la profe de filosofía
+                abrimos el primer correo, solo para llenar el PC de virus bajando canciones en Ares y flowhot.net.
+              </p>
+              <p>
+                Nos dábamos duro, como el cabezazo de Zidane a Materazzi. Éramos unos pubertos con ganas de comernos el mundo, sin saber
+                que seríamos la última promoción de la historia del INALFU. Hoy, aunque seamos más unos tíos chavorucos casi cuarentones,
+                nos convocamos para celebrar que compartimos esa etapa.
+              </p>
+            </div>
+            <p class="mx-auto max-w-xl text-center font-display text-lg italic text-inalfu-800/90 sm:text-xl">
+              ¡Bienvenidos a la fiesta!
+            </p>
+            <div class="flex justify-center pt-1">
+              <a
+                href="https://chat.whatsapp.com/H2MBfKG3SPA5kyL436iNJP"
+                class="hero-cta"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ser parte del encuentro
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="servicios" class="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 md:py-20">
-        <div class="reveal mb-10 max-w-3xl space-y-3">
-          <p class="text-sm font-semibold uppercase tracking-wide text-emerald-700">Servicios</p>
-          <h2 class="text-3xl font-bold text-slate-900">Todo lo que tu mascota necesita en un mismo lugar</h2>
-          <p class="text-slate-700">Atencion preventiva, diagnostico y tratamiento con protocolos actualizados.</p>
-        </div>
-        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <article class="reveal card">
-            <h3 class="card-title">Consulta general</h3>
-            <p class="card-text">Revision integral con enfoque preventivo y plan personalizado.</p>
-          </article>
-          <article class="reveal card">
-            <h3 class="card-title">Vacunacion y desparasitacion</h3>
-            <p class="card-text">Esquema seguro segun edad, especie y antecedentes clinicos.</p>
-          </article>
-          <article class="reveal card">
-            <h3 class="card-title">Laboratorio clinico</h3>
-            <p class="card-text">Resultados confiables para decisiones medicas rapidas y precisas.</p>
-          </article>
-          <article class="reveal card">
-            <h3 class="card-title">Cirugia de baja y media complejidad</h3>
-            <p class="card-text">Protocolos de anestesia monitorizada y recuperacion asistida.</p>
-          </article>
-          <article class="reveal card">
-            <h3 class="card-title">Odontologia veterinaria</h3>
-            <p class="card-text">Limpieza y salud oral para prevenir dolor e infecciones cronicas.</p>
-          </article>
-          <article class="reveal card">
-            <h3 class="card-title">Urgencias 24/7</h3>
-            <p class="card-text">Atencion inmediata para estabilizar y actuar con rapidez.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="beneficios" class="bg-white py-16 md:py-20">
-        <div class="mx-auto grid w-full max-w-6xl gap-8 px-4 sm:px-6 md:grid-cols-2">
-          <div class="reveal space-y-4">
-            <p class="text-sm font-semibold uppercase tracking-wide text-emerald-700">Por que elegirnos</p>
-            <h2 class="text-3xl font-bold text-slate-900">Confianza clinica con trato verdaderamente humano</h2>
-            <p class="text-slate-700">
-              Diseñamos cada consulta para que entiendas el estado de salud de tu mascota y las siguientes acciones
-              sin dudas ni tecnicismos innecesarios.
-            </p>
-            <a href="#contacto" class="btn-primary inline-flex">Quiero una cita</a>
+          <div class="reveal relative min-h-[280px] aspect-[4/3] overflow-hidden rounded-2xl border border-inalfu-200 bg-white shadow-xl ring-1 ring-black/5 sm:min-h-[320px] md:aspect-square md:min-h-0">
+            <img
+              src="./public/assets/images/hero-colegio.png"
+              alt="El colegio INALFU — lugar que nos vio crecer"
+              class="h-full w-full object-cover rounded-2xl"
+              width="800"
+              height="600"
+              fetchpriority="high"
+            />
           </div>
-          <ul class="grid gap-4">
+        </div>
+      </section>
+
+      <section id="invitados" class="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 md:py-20">
+        <div class="reveal mx-auto max-w-3xl space-y-6 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-inalfu-800">Invitados</p>
+          <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">PROM 2026</h2>
+          <div class="mx-auto max-w-2xl text-left text-base leading-relaxed text-slate-700 sm:max-w-3xl sm:text-lg">
+            <p>
+              Esta es una fiesta incluyente, no sólo abarca a quienes nos graduamos formalmente, sino también a quienes se
+              graduaron por ventanilla, a quienes fueron reclutados por el ejército y no pudieron asistir al grado, a
+              quienes se pasaron a la nocturna en 10° u 11°, a los que perdieron el año, y quienes fueron muy cercanos a
+              nuestra promoción, y no se graduaron con nosotros. Incluso queremos convocar profesores.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 md:py-20">
+        <div class="reveal mb-10 max-w-3xl space-y-3">
+          <p class="text-sm font-semibold uppercase tracking-wide text-inalfu-700">Galería</p>
+          <h2 class="text-xl font-bold text-slate-900 sm:text-2xl">Recuerdos en imagen</h2>
+          <p class="font-display text-base italic tracking-wide text-inalfu-800/75 sm:text-lg">#sendnudes</p>
+          <p class="text-sm leading-relaxed text-slate-700 sm:text-base">
+            <a
+              href="https://open.spotify.com/playlist/2Aqw2ijTuVqsHbBbpY9Qzj?si=eaeb597053d24f93&pt=fb45c3a96de645ddcc12876e4488469c"
+              class="font-medium text-inalfu-800 underline decoration-inalfu-200 underline-offset-2 transition hover:text-inalfu-600 hover:decoration-inalfu-400"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Añade a la lista de reproducción oficial del encuentro, esos temas que no pueden faltar</a>
+          </p>
+        </div>
+        <div class="reveal grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <figure class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm sm:col-span-2 lg:col-span-2">
+            <img
+              src="./public/assets/images/galeria-1-fiesta.jpeg"
+              alt="Recuerdo del parche — fiesta y celebración"
+              class="h-full w-full max-h-[28rem] object-cover"
+              width="1200"
+              height="800"
+              loading="lazy"
+            />
+            <figcaption class="sr-only">Primera imagen de la galería del encuentro</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="evento" class="bg-white py-16 md:py-20">
+        <div class="mx-auto w-full max-w-6xl px-4 sm:px-6">
+          <div class="reveal mb-10 max-w-3xl space-y-4">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-inalfu-800">Evento</p>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              The Last INALFU - 26 de diciembre de 2026
+            </h2>
+            <p class="text-base leading-relaxed text-slate-700 sm:text-lg">
+              Prográmense desde la tarde, porque habrá misa 🙏, desfile👩🏼‍🎓, cena como si fuera la tienda del colegio 🤍💚,
+              fiesta tipo miniTK🎉, música en vivo 🕺🏼, invitados especiales💞 y mucho más
+            </p>
+            <p class="pt-2 text-center font-display text-xl italic tracking-wide text-inalfu-800 sm:text-2xl">
+              anímesen
+            </p>
+          </div>
+          <ul class="grid gap-4 md:grid-cols-2">
             <li class="reveal rounded-2xl border border-slate-200 p-5">
-              <h3 class="font-semibold text-slate-900">Diagnostico claro</h3>
-              <p class="mt-2 text-slate-700">Te explicamos opciones de tratamiento y costos con transparencia.</p>
+              <h3 class="font-semibold text-slate-900">Misa / conmemoración</h3>
+              <p class="mt-2 text-slate-700">
+                Para honrar y recordar a los que ya no están y agradecer por este reencuentro.
+              </p>
             </li>
             <li class="reveal rounded-2xl border border-slate-200 p-5">
-              <h3 class="font-semibold text-slate-900">Acompañamiento continuo</h3>
-              <p class="mt-2 text-slate-700">Seguimiento posterior por WhatsApp para resolver dudas en casa.</p>
+              <h3 class="font-semibold text-slate-900">Fiesta / reencuentro</h3>
+              <p class="mt-2 text-slate-700">
+                Encuentro previsto después del final de la tarde. Según las confirmaciones intentaremos buscar el lugar
+                que más se adapte al aforo.
+              </p>
             </li>
             <li class="reveal rounded-2xl border border-slate-200 p-5">
-              <h3 class="font-semibold text-slate-900">Equipo especializado</h3>
-              <p class="mt-2 text-slate-700">Medicos veterinarios en formacion constante y protocolos actualizados.</p>
+              <h3 class="font-semibold text-slate-900">Horarios</h3>
+              <p class="mt-2 text-slate-700">Cronograma del día: en preparación. Seguí las novedades en WhatsApp.</p>
             </li>
             <li class="reveal rounded-2xl border border-slate-200 p-5">
-              <h3 class="font-semibold text-slate-900">Atencion centrada en bienestar</h3>
-              <p class="mt-2 text-slate-700">Espacios tranquilos para reducir estres y mejorar la experiencia.</p>
+              <h3 class="font-semibold text-slate-900">Lugar</h3>
+              <p class="mt-2 text-slate-700">Dirección y referencias se publicarán cuando esté cerrado el plan del encuentro.</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section id="testimonios" class="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 md:py-20">
+      <section id="anecdotas" class="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 md:py-20">
         <div class="reveal mb-8 flex flex-wrap items-end justify-between gap-4">
           <div class="space-y-3">
-            <p class="text-sm font-semibold uppercase tracking-wide text-emerald-700">Testimonios</p>
-            <h2 class="text-3xl font-bold text-slate-900">Historias reales de tranquilidad</h2>
+            <p class="text-sm font-semibold uppercase tracking-wide text-inalfu-700">Anécdotas</p>
+            <h2 class="text-3xl font-bold text-slate-900">Historias y recuerdos</h2>
+            <p class="max-w-2xl text-slate-700">
+              envíen esas historias inmortales que tengan de esos dosmiles, para compartir la alegría, jocosidad y nostalgia
+            </p>
+            <div
+              class="max-w-2xl rounded-xl border border-inalfu-200/90 bg-inalfu-fondo/70 px-4 py-3 text-sm leading-relaxed text-slate-700 shadow-sm"
+            >
+              <p>
+                envía tu historia escrita o en nota de voz para ir nutriendo esta sección —
+                <a
+                  href="https://wa.me/573043397256"
+                  class="font-semibold text-inalfu-800 underline decoration-inalfu-300 decoration-2 underline-offset-2 transition hover:text-inalfu-600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp</a>
+              </p>
+            </div>
           </div>
-          <div class="flex items-center gap-2" aria-label="Controles de testimonios">
+          <div class="flex items-center gap-2" aria-label="Controles de anécdotas">
             <button
               id="testimonial-prev"
               type="button"
-              class="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold hover:border-emerald-500 hover:text-emerald-700"
+              class="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold hover:border-inalfu-500 hover:text-inalfu-700"
             >
               Anterior
             </button>
             <button
               id="testimonial-next"
               type="button"
-              class="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold hover:border-emerald-500 hover:text-emerald-700"
+              class="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold hover:border-inalfu-500 hover:text-inalfu-700"
             >
               Siguiente
             </button>
@@ -188,97 +275,107 @@
           <div id="testimonial-track" class="space-y-5">
             <article class="testimonial-item" data-testimonial>
               <p class="text-lg text-slate-800">
-                "Llegamos por una urgencia y nos atendieron con una calma que nos devolvio la confianza en minutos.
-                Hoy Luna esta perfecta."
+                &ldquo;Todavía no sabemos si fue culpa de filosofía o de Ares, pero ese PC nunca volvió a ser el
+                mismo.&rdquo;
               </p>
-              <p class="mt-3 text-sm font-semibold text-emerald-700">Mariana y Luna</p>
+              <p class="mt-3 text-sm font-semibold text-inalfu-700">Recuerdo del parche</p>
             </article>
             <article class="hidden testimonial-item" data-testimonial>
               <p class="text-lg text-slate-800">
-                "El seguimiento posterior fue increible. Nos explicaron todo paso a paso y siempre contestaron nuestras
-                dudas."
+                &ldquo;Veinte años después seguimos preguntándonos si el amor existía en física o solo en química.&rdquo;
               </p>
-              <p class="mt-3 text-sm font-semibold text-emerald-700">Carlos y Rocky</p>
+              <p class="mt-3 text-sm font-semibold text-inalfu-700">Otra voz del curso</p>
             </article>
             <article class="hidden testimonial-item" data-testimonial>
               <p class="text-lg text-slate-800">
-                "Se siente una clinica premium pero cercana. No solo tratan la enfermedad, tambien cuidan la
-                experiencia."
+                &ldquo;La última promoción del INALFU: un título que nadie pidió y todos cargamos con orgullo.&rdquo;
               </p>
-              <p class="mt-3 text-sm font-semibold text-emerald-700">Daniela y Bruno</p>
+              <p class="mt-3 text-sm font-semibold text-inalfu-700">Para sumar la tuya pronto</p>
             </article>
           </div>
-          <div id="testimonial-dots" class="mt-6 flex items-center gap-2" aria-label="Indicador de testimonios"></div>
+          <div id="testimonial-dots" class="mt-6 flex items-center gap-2" aria-label="Indicador de anécdotas"></div>
         </div>
       </section>
 
-      <section id="contacto" class="bg-slate-900 py-16 text-slate-100 md:py-20">
-        <div class="mx-auto grid w-full max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2">
-          <div class="reveal space-y-4">
-            <p class="text-sm font-semibold uppercase tracking-wide text-emerald-300">Contacto</p>
-            <h2 class="text-3xl font-bold">Agenda en menos de 1 minuto</h2>
-            <p class="text-slate-300">
-              Elige el canal que prefieras. Nuestro equipo te ayuda a reservar, resolver dudas y orientar el siguiente
-              paso.
+      <section id="emprendimientos" class="bg-slate-50 py-16 md:py-20">
+        <div class="mx-auto w-full max-w-6xl px-4 sm:px-6">
+          <div class="reveal mb-10 max-w-3xl space-y-3">
+            <p class="text-sm font-semibold uppercase tracking-wide text-inalfu-700">Emprendimientos</p>
+            <h2 class="text-3xl font-bold text-slate-900">Lo que hacemos hoy</h2>
+            <p class="text-slate-700">
+              Algunos nunca se fueron, otros nunca regresaron, otros vuelven con cierta frecuencia. Aquí tendremos un espacio
+              para conectarnos
             </p>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://wa.me/5215551234567" class="btn-primary" target="_blank" rel="noopener noreferrer">
-                Escribir por WhatsApp
-              </a>
-              <a href="tel:+525551234567" class="btn-secondary border-slate-500 text-slate-100 hover:bg-slate-800">
-                Llamar ahora
-              </a>
-            </div>
-            <p class="text-sm text-slate-300">Horario: Lun-Sab 8:00 a 20:00 | Urgencias 24/7</p>
           </div>
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="reveal card">
+              <h3 class="card-title">tipo de bien o servicio</h3>
+              <p class="text-sm font-medium text-inalfu-700">Nombre del emprendimiento</p>
+              <p class="card-text">Breve descripción del proyecto o servicio. Contacto o enlace próximamente.</p>
+            </article>
+            <article class="reveal card">
+              <h3 class="card-title">tipo de bien o servicio</h3>
+              <p class="text-sm font-medium text-inalfu-700">Nombre del emprendimiento</p>
+              <p class="card-text">Breve descripción del proyecto o servicio. Contacto o enlace próximamente.</p>
+            </article>
+            <article class="reveal card">
+              <h3 class="card-title">tipo de bien o servicio</h3>
+              <p class="text-sm font-medium text-inalfu-700">Nombre del emprendimiento</p>
+              <p class="card-text">Breve descripción del proyecto o servicio. Contacto o enlace próximamente.</p>
+            </article>
+            <article class="reveal card">
+              <h3 class="card-title">tipo de bien o servicio</h3>
+              <p class="text-sm font-medium text-inalfu-700">Nombre del emprendimiento</p>
+              <p class="card-text">Breve descripción del proyecto o servicio. Contacto o enlace próximamente.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-          <form id="contact-form" class="reveal space-y-4 rounded-2xl bg-white p-6 text-slate-800 shadow-lg" novalidate>
-            <div>
-              <label for="name" class="mb-1 block text-sm font-medium">Nombre completo</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
-              />
+      <section id="whatsapp" class="bg-slate-900 py-16 text-slate-100 md:py-20">
+        <div class="mx-auto max-w-3xl space-y-6 px-4 text-center sm:px-6">
+          <div class="reveal space-y-4">
+            <p class="text-sm font-semibold uppercase tracking-wide text-inalfu-300">WhatsApp</p>
+            <h2 class="text-3xl font-bold">Grupo oficial del encuentro</h2>
+            <p class="text-slate-300">
+              Si llegaste hasta aquí, fijo ya estas en el grupo. Si lo tienes archivado, entra de vez en cuando a motivar las
+              diales y participa para cuadrar fechas, lugares, misa, fiesta y todo sobre el encuentro de The Last INALFU.
+            </p>
+            <div class="flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
+              <a
+                href="https://chat.whatsapp.com/H2MBfKG3SPA5kyL436iNJP"
+                class="btn-primary w-full min-w-[14rem] justify-center sm:w-auto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Entrar al grupo de WhatsApp
+              </a>
+              <a href="#inicio-landing" class="btn-primary w-full min-w-[14rem] justify-center sm:w-auto">Volver arriba</a>
             </div>
-            <div>
-              <label for="phone" class="mb-1 block text-sm font-medium">Telefono</label>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                required
-                inputmode="tel"
-                class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
-              />
-            </div>
-            <div>
-              <label for="message" class="mb-1 block text-sm font-medium">Motivo de consulta</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-                class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn-primary w-full justify-center">Solicitar contacto</button>
-            <p id="form-feedback" class="text-sm" aria-live="polite"></p>
-          </form>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="border-t border-slate-200 bg-white">
-      <div class="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-slate-600 sm:px-6 md:flex-row md:items-center md:justify-between">
-        <p>© 2026 VitalPaws. Cuidado veterinario profesional y cercano.</p>
-        <div class="flex gap-4">
-          <a href="#inicio" class="hover:text-emerald-700">Inicio</a>
-          <a href="#contacto" class="hover:text-emerald-700">Agendar cita</a>
-          <a href="tel:+525551234567" class="hover:text-emerald-700">Llamar</a>
-        </div>
+      <div
+        class="mx-auto flex w-full max-w-6xl flex-row flex-wrap items-center justify-center gap-x-3 gap-y-2 px-4 py-6 text-xs text-slate-600 sm:gap-x-4 sm:px-6 sm:text-sm"
+      >
+        <span
+          class="inline-flex shrink-0 items-center gap-2 text-center text-xs leading-none sm:text-sm sm:whitespace-nowrap"
+        >
+          <span class="leading-none">© 2026 GuineoLab. Tecnología hecha a mano</span>
+          <img
+            src="./public/assets/images/Guineolabpng.png"
+            alt="Guineo Lab"
+            class="h-[1.55cap] w-auto shrink-0 object-contain object-bottom opacity-90 sm:h-[1.7cap]"
+            width="80"
+            height="12"
+            loading="lazy"
+          />
+        </span>
+        <span class="hidden text-slate-300 sm:inline" aria-hidden="true">|</span>
+        <a href="#sobre-el-encuentro" class="shrink-0 whitespace-nowrap font-medium hover:text-inalfu-700">Sobre el encuentro</a>
       </div>
     </footer>
 

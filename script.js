@@ -73,7 +73,7 @@ const renderTestimonial = (nextIndex) => {
     dots.forEach((dot, index) => {
       const isActive = index === currentTestimonial;
       dot.setAttribute("aria-current", isActive ? "true" : "false");
-      dot.classList.toggle("bg-emerald-600", isActive);
+      dot.classList.toggle("bg-inalfu-600", isActive);
       dot.classList.toggle("bg-slate-300", !isActive);
     });
   }
