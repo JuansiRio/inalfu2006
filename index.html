@@ -7,7 +7,78 @@
       name="description"
       content="Encuentro de egresados The Last INALFU — 20 años después. Convocatoria, información del evento y grupo oficial de WhatsApp. Si hiciste parte de esa época, este encuentro es para ti."
     />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1B7C41" />
     <title>The Last INALFU — 20 años después | Encuentro de egresados</title>
+    <link rel="canonical" href="https://ev0.gndx.dev/" />
+    <link rel="icon" href="./public/assets/images/thelast.png" type="image/png" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Last INALFU — 20 años después | Encuentro de egresados" />
+    <meta
+      property="og:description"
+      content="Encuentro de egresados The Last INALFU — 20 años después. Convocatoria, información del evento y grupo oficial de WhatsApp."
+    />
+    <meta property="og:url" content="https://ev0.gndx.dev/" />
+    <meta property="og:image" content="https://ev0.gndx.dev/public/assets/images/thelast.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="240" />
+    <meta property="og:image:alt" content="The Last INALFU — 20 años después" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Last INALFU — 20 años después | Encuentro de egresados" />
+    <meta
+      name="twitter:description"
+      content="Encuentro de egresados The Last INALFU — 20 años después. Convocatoria, información del evento y grupo oficial de WhatsApp."
+    />
+    <meta name="twitter:image" content="https://ev0.gndx.dev/public/assets/images/thelast.png" />
+    <meta name="twitter:image:alt" content="The Last INALFU — 20 años después" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://ev0.gndx.dev/#website",
+            "name": "The Last INALFU",
+            "url": "https://ev0.gndx.dev/",
+            "inLanguage": "es-CO",
+            "description": "Encuentro de egresados INALFU — 20 años después. Información del evento y grupo de WhatsApp."
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://ev0.gndx.dev/#webpage",
+            "url": "https://ev0.gndx.dev/",
+            "name": "The Last INALFU — 20 años después | Encuentro de egresados",
+            "description": "Encuentro de egresados The Last INALFU — 20 años después. Convocatoria, información del evento y grupo oficial de WhatsApp.",
+            "isPartOf": { "@id": "https://ev0.gndx.dev/#website" },
+            "about": { "@id": "https://ev0.gndx.dev/#event" },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://ev0.gndx.dev/public/assets/images/thelast.png"
+            }
+          },
+          {
+            "@type": "Event",
+            "@id": "https://ev0.gndx.dev/#event",
+            "name": "The Last INALFU — 20 años después",
+            "description": "Reencuentro de egresados de la última promoción del INALFU. Misa, desfile, cena y fiesta el 26 de diciembre de 2026. Lugar y horarios finales por confirmar.",
+            "startDate": "2026-12-26",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+              "@type": "Place",
+              "name": "Lugar por confirmar",
+              "address": { "@type": "PostalAddress", "addressCountry": "CO" }
+            },
+            "organizer": {
+              "@type": "Organization",
+              "name": "Comunidad The Last INALFU"
+            },
+            "image": "https://ev0.gndx.dev/public/assets/images/thelast.png"
+          }
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -88,18 +159,19 @@
         class="relative overflow-hidden bg-gradient-to-br from-white via-inalfu-fondo to-inalfu-100/60"
         aria-labelledby="titulo-encuentro"
       >
-        <h1 id="titulo-encuentro" class="sr-only">The Last INALFU — 20 años después, encuentro de egresados</h1>
         <div class="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:gap-12 sm:px-6 md:grid-cols-2 md:items-center md:py-24">
           <div class="reveal flex flex-col space-y-6">
             <p class="w-full text-center text-xs font-semibold uppercase tracking-[0.2em] text-inalfu-800">
               Sobre el encuentro
             </p>
             <div class="flex w-full flex-col items-center text-center">
-              <p
-                class="inline-flex items-center justify-center rounded-full border border-inalfu-200 bg-white/95 px-9 py-2.5 text-center text-lg font-medium tracking-wide text-inalfu-oscuro shadow-sm sm:px-11 sm:py-3 sm:text-xl"
+              <h1
+                id="titulo-encuentro"
+                class="inline-flex max-w-xl flex-col items-center justify-center gap-1 rounded-full border border-inalfu-200 bg-white/95 px-9 py-2.5 text-center text-lg font-medium tracking-wide text-inalfu-oscuro shadow-sm sm:px-11 sm:py-3 sm:text-xl"
               >
-                20 años después
-              </p>
+                <span class="font-semibold">The Last INALFU</span>
+                <span class="text-base text-inalfu-800 sm:text-lg">20 años después · encuentro de egresados</span>
+              </h1>
             </div>
             <div class="max-w-xl space-y-3 text-base leading-relaxed text-inalfu-texto/88">
               <p>
@@ -109,7 +181,7 @@
               </p>
               <p>
                 Buscábamos superar la selección natural mejorando el quiebre de cadera, cantando Ella y Yo como si nos estuviera pasando:
-                &ldquo;tú y ella en una cama, allá en Bonafont&rdquo;. Queríamos aprender, pero sobre todo quemar los cartuchos de la
+                <em class="italic">&ldquo;tú y ella en una cama, allá en Bonafont&rdquo;</em>. Queríamos aprender, pero sobre todo quemar los cartuchos de la
                 juventud. En física nos dijeron que el amor no existe, pero en química nos volvió la duda. Gracias a la profe de filosofía
                 abrimos el primer correo, solo para llenar el PC de virus bajando canciones en Ares y flowhot.net.
               </p>
@@ -164,7 +236,7 @@
       <section id="galeria" class="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 md:py-20">
         <div class="reveal mb-10 max-w-3xl space-y-3">
           <p class="text-sm font-semibold uppercase tracking-wide text-inalfu-700">Galería</p>
-          <h2 class="text-xl font-bold text-slate-900 sm:text-2xl">Recuerdos en imagen</h2>
+          <h2 class="text-xl font-bold text-slate-900 sm:text-2xl">Recuerdos en imagen y audio</h2>
           <p class="font-display text-base italic tracking-wide text-inalfu-800/75 sm:text-lg">#sendnudes</p>
           <p class="text-sm leading-relaxed text-slate-700 sm:text-base">
             <a
@@ -368,7 +440,7 @@
           <img
             src="./public/assets/images/Guineolabpng.png"
             alt="Guineo Lab"
-            class="h-[1.55cap] w-auto shrink-0 object-contain object-bottom opacity-90 sm:h-[1.7cap]"
+            class="h-[1.6cap] w-auto shrink-0 object-contain object-bottom opacity-90 sm:h-[1.75cap]"
             width="80"
             height="12"
             loading="lazy"
