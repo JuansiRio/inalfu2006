@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { GalleryAlbum } from "@/components/GalleryAlbum";
 import { Reveal } from "@/components/Reveal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Testimonials } from "@/components/Testimonials";
@@ -298,21 +299,8 @@ export default function Home() {
               </a>
             </p>
           </Reveal>
-          <Reveal className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm sm:col-span-2 lg:col-span-2">
-              <Image
-                src={withBasePath("/assets/images/galeria-1-fiesta.jpeg")}
-                alt="Recuerdo del parche — fiesta y celebración"
-                width={1200}
-                height={800}
-                className="h-full w-full max-h-[28rem] object-cover"
-                loading="lazy"
-                sizes="(max-width: 640px) 100vw, 66vw"
-              />
-              <figcaption className="sr-only">
-                Primera imagen de la galería del encuentro
-              </figcaption>
-            </figure>
+          <Reveal>
+            <GalleryAlbum />
           </Reveal>
         </section>
 
@@ -343,7 +331,7 @@ export default function Home() {
                   </h3>
                   <p className="mt-2 text-slate-700">
                     Para honrar y recordar a los que ya no están y agradecer por
-                    este reencuentro.
+                    este reencuentro que desde ya nos está haciendo pasar bueno.
                   </p>
                 </Reveal>
               </li>
@@ -361,7 +349,7 @@ export default function Home() {
                   <h3 className="font-semibold text-slate-900">Horarios</h3>
                   <p className="mt-2 text-slate-700">
                     Cronograma del día: habrá francachela y habrá comilona.
-                    Religión, Química, Educación Física.
+                    Religión, Química, , Probabilidad, Filosofía y Educación Física.
                   </p>
                 </Reveal>
               </li>
@@ -369,7 +357,7 @@ export default function Home() {
                 <Reveal>
                   <h3 className="font-semibold text-slate-900">DressCode</h3>
                   <p className="mt-2 text-slate-700">
-                    Papis, mamis, chimbitas, picao a locos, como siempre.
+                    Papis, mamis, chimbitas, con la percha, picao a locos, como siempre, como en el JeanDay.
                   </p>
                 </Reveal>
               </li>

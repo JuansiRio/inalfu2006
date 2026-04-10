@@ -116,7 +116,7 @@ export default function RootLayout({
         {children}
         <Script
           src={withBasePath("/data/promocion.js")}
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
         <Script src={withBasePath("/js/crush.js")} strategy="afterInteractive" />
       </body>

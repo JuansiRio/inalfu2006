@@ -6,15 +6,20 @@ const PROMOCION = {
     "Jefferson Arturo Arango Hernández","Daniel Armando Arias Gómez","Cristhian Felipe Becerra Gallego","Jhon Alexander Betancur Pescador","Jorge Leonardo Castro Molina","Rubén Darío Chaurra Betancur","William Ricardo Díaz Ramírez","Esteban de Jesús Durán Guapacha","Einer Fernando González Campeón","Javier Eduardo Guapacha Osorio","Julián Andrés Gutiérrez López","Wilson Herrera Hoyos","Camilo José Jiménez Cataño","César Augusto Largo Agudelo","Jhon Andrés Londoño Ladino","César David López Díaz","Juan Simón Obando Zapata","Santiago Pava González","Sergio Iván Ramírez Herrera","Andrés Felipe Rivera Trejos","Camilo Andrés Rotavista Soto","Sergio Andrés Salazar Díaz","Juan David Soto Acosta","Yeison Mateo Taffurth Vinasco","Lucas Felipe Torres Rojas","Juan Pablo Velásquez Restrepo","Jaime Andrés Vinasco Barco","Jawad Yasser Yusef Mejía","Luis Eduardo Zapata Díaz","Daniel Felipe Zuleta Zapata","Juan Camilo Zuluaga Londoño","Germán Ariel Campeón Toro","Andrés Camilo Carvajal Velasco","Edwin Cañen Cañen","David Mauricio García Bañol","Juan Guillermo García Motato","Camilo Andrés Gil Giraldo","Julián Asdrúbal Gómez Ramos","Carlos Alberto González Taborda","Jairo Alonso Guapacha Largo","Jhon Esteban Henao Gutiérrez","Jhonatan Antonio Largo Marín","Carlos Andrés Largo Morales","Diego Fernando Londoño Zamora","Juan Sebastián López García","Oscar Andrés Morales García","Diego Alexander Ortega Peláez","Yirvey Ramírez González","Yeison Andrés Reyes Uchima","Yeison Fabián Suárez Tamayo","Pablo Felipe Taba Becerra","Clarkson Steven Tabarquino Guerrero","Daniel Camilo Taborda Giraldo","Arley de Jesús Taborda Morales","Ferney Trejos Montes","Yeison Trejos Montes","Daniel Mauricio Ayala Trejos","Camilo Alejandro Bañol Bañol","Dagnover Becerra González","David Emilio Cadavid Morales","David Alejandro Calvo Ladino","Jhon Edwin Castaño Henao","Julián David Ciro Rodríguez","Lisandro Cruz Hernández","Andrés Humberto Cruz Hoyos","Jhon Estick De los Ríos Reyes","Juan David Galeano González","Yeison Augusto García Durán","Julián Alexander García Manzo","Gabriel Adolfo Gil Cataño","Andrés Felipe Giraldo García","Cristian Camilo González González","Alfonso Antonio Guapacha Guapacha","Luis Hernando Guapacha Guapacha","William Alberto Guapacha Taba","Julián Alexander Hernández Becerra","Juan Felipe Hoyos Peláez","Eduar Manfrey Lasso León","Carlos Adrián Ocampo Gallego","Elkin Asdrúbal Sánchez Marín","Wilmar Arlex Valencia","Fily Mateos Grisales Franco"
   ],
   frases: [
-    "¿Por qué no te animaste? Ya no hay forma.",
-    "Ese quiebre de cadera no era para todos.",
-    "En química sí existía el amor, y tú lo sabías.",
-    "Todavía alguien pregunta por ti en el grupo de WhatsApp.",
-    "La física dijo que no existía, pero la biología nunca mintió.",
-    "Eras el/la que todos miraban en el miniTK y nadie decía nada.",
-    "Veinte años después y sigues siendo un misterio.",
-    "Si Ares hubiera tenido Tinder, otro gallo cantaría.",
-    "El uniforme verde nunca le quedó tan bien a nadie más.",
-    "El recreo nunca fue suficiente tiempo."
+    "¿Por qué no te animaste? Ya 20  años después, como difícil. Que a partir de hoy no te falte el valor",
+    "Ese quiebre de cadera no era para todos, y pudo haber sido para NOSOTROS... Pero no lo fue :'( lo será?",
+    "En química sí existía el amor, así en física Juaco dijera que no.",
+    "No sólo yo, parece que tienes hartos crushes en el grupo de WhatsApp.",
+    "Hasta combinaban nuestros apellidos :s",
+    "Eras a quien todos miraban en el jeanday, cuando sacábamos la pecrchita",
+    "Veinte años después y sigues siendo un misterio, ¿lo desciframos?.",
+    "Si Ares hubiera tenido Tinder, la historia en hi5 habría sido otra.",
+    "El uniforme nunca le quedó tan bien a nadie más.",
+    "Todavía estas a tiempo, así esta realidad diga otra cosa."
   ]
 };
+
+/** Expone los datos al crush y a cualquier script que cargue después (Next.js puede cargar scripts en paralelo). */
+if (typeof window !== "undefined") {
+  window.PROMOCION = PROMOCION;
+}

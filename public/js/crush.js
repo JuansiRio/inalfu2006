@@ -7,9 +7,15 @@
     }
   }
 
+  function promocionData() {
+    if (typeof window !== "undefined" && window.PROMOCION) return window.PROMOCION;
+    if (typeof PROMOCION !== "undefined") return PROMOCION;
+    return null;
+  }
+
   function waitPromocion(cb, tries) {
     tries = tries || 0;
-    if (typeof PROMOCION !== "undefined") {
+    if (promocionData()) {
       cb();
       return;
     }
@@ -54,6 +60,9 @@
   });
 
   function init() {
+    var PROMOCION = promocionData();
+    if (!PROMOCION) return;
+
     var input = document.getElementById("input-nombre");
     var btn = document.getElementById("btn-crush");
     var resultado = document.getElementById("resultado-crush");

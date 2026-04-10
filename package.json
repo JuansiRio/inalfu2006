@@ -1,5 +1,5 @@
 {
-  "name": "10xbuilder-code",
+  "name": "INALFU2006",
   "version": "1.0.0",
   "description": "Landing The Last INALFU — Next.js, Tailwind CSS",
   "license": "MIT",
@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lab10-org/10X-builder-code.git"
+    "url": "https://github.com/JuansiRio/inalfu2006"
   },
   "bugs": {
-    "url": "https://github.com/lab10-org/10X-builder-code/issues"
+    "url": "https://github.com/JuansiRio/inalfu2006"
   },
   "homepage": "https://ev0.gndx.dev",
   "contributors": [
     {
-      "name": "Oscar Barajas @gndx",
-      "email": "oscar@gndx.dev",
-      "url": "https://gndx.dev"
+      "name": "Juan Simón Obando",
+      "email": "guineolab@gmail.com",
+      "url": "https://thelastinalfu.com"
     }
   ],
   "scripts": {
