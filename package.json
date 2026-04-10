@@ -1,7 +1,7 @@
 {
   "name": "10xbuilder-code",
   "version": "1.0.0",
-  "description": "Landing page veterinaria con TailwindCSS y JavaScript Vanilla",
+  "description": "Landing The Last INALFU — Next.js, Tailwind CSS",
   "license": "MIT",
   "private": true,
   "author": {
@@ -22,14 +22,25 @@
       "url": "https://gndx.dev"
     }
   ],
-  "type": "commonjs",
   "scripts": {
-    "css:watch": "tailwindcss -i ./src/styles/input.css -o ./public/assets/css/styles.css --watch",
-    "css:build": "tailwindcss -i ./src/styles/input.css -o ./public/assets/css/styles.css --minify",
-    "dev": "npm run css:watch",
-    "build": "npm run css:build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "16.2.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.17"
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

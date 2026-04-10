@@ -1,14 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --verde-inalfu-principal: #1b7c41;
-    --verde-inalfu-oscuro: #11522a;
-    --fondo-inalfu: #fbf9f1;
-    --texto-inalfu: #212121;
-  }
+@theme {
+  --color-inalfu: #1b7c41;
+  --color-inalfu-fondo: #fbf9f1;
+  --color-inalfu-texto: #212121;
+  --color-inalfu-principal: #1b7c41;
+  --color-inalfu-oscuro: #11522a;
+  --color-inalfu-50: #f4faf6;
+  --color-inalfu-100: #e8f2eb;
+  --color-inalfu-200: #d0e6d6;
+  --color-inalfu-300: #9bc4a9;
+  --color-inalfu-600: #1b7c41;
+  --color-inalfu-700: #166a38;
+  --color-inalfu-800: #11522a;
+  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
+}
+
+:root {
+  --verde-inalfu-principal: #1b7c41;
+  --verde-inalfu-oscuro: #11522a;
+  --fondo-inalfu: #fbf9f1;
+  --texto-inalfu: #212121;
 }
 
 @layer components {
@@ -32,13 +44,12 @@
     @apply mt-2 text-slate-700;
   }
 
-  /* Hero principal — The Last INALFU */
   .hero-title {
     @apply font-display text-[2.75rem] font-semibold leading-[1.08] tracking-tight text-inalfu-texto sm:text-6xl md:text-[3.5rem];
   }
 
   .hero-cta {
-    @apply btn-primary min-w-[14rem] px-10 py-4 text-base shadow-md hover:shadow-lg;
+    @apply inline-flex min-w-[14rem] items-center justify-center rounded-lg bg-inalfu-600 px-10 py-4 text-base font-semibold text-white shadow-md transition hover:bg-inalfu-800 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-inalfu-300 focus:ring-offset-2 focus:ring-offset-inalfu-fondo;
   }
 }
 
