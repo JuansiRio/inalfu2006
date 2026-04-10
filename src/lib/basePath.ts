@@ -1,13 +1,17 @@
 import { siteUrl } from "@/lib/site";
 
-/** Segmento del repo en GitHub Pages (sin slashes). Vacío en dominio raíz / Vercel. */
-const segment = (process.env.NEXT_PUBLIC_BASE_PATH ?? "")
+/**
+ * Igual que en next.config: solo GitHub Pages / subruta en build de producción.
+ * En `next dev` siempre vacío → la app vive en http://localhost:3000/ (no /inalfu2006).
+ */
+const segment = (process.env.NEXT_PUBLIC_SITE_BASE_PATH ?? "")
   .trim()
   .replace(/^\/+|\/+$/g, "");
+const isDev = process.env.NODE_ENV === "development";
 
-/** Prefija rutas absolutas de `public/` cuando hay subruta (p. ej. /inalfu2006). */
+/** Prefija rutas de `public/` cuando el sitio se publica bajo una subruta. */
 export function withBasePath(path: string): string {
-  if (!path.startsWith("/") || !segment) return path;
+  if (!path.startsWith("/") || !segment || isDev) return path;
   return `/${segment}${path}`;
 }
 

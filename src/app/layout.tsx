@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     "Encuentro de egresados The Last INALFU — 20 años después. Convocatoria, información del evento y grupo oficial de WhatsApp. Si hiciste parte de esa época, este encuentro es para ti.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
-  icons: { icon: withBasePath("/assets/images/thelast.png") },
+  icons: { icon: absolutePublicAsset("/assets/images/thelast.png") },
   openGraph: {
     locale: "es_CO",
     type: "website",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     images: [
       {
-        url: withBasePath("/assets/images/thelast.png"),
+        url: absolutePublicAsset("/assets/images/thelast.png"),
         width: 1200,
         height: 240,
         alt: "The Last INALFU — 20 años después",
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
     title: "The Last INALFU — 20 años después | Encuentro de egresados",
     description:
       "Encuentro de egresados The Last INALFU — 20 años después. Convocatoria, información del evento y grupo oficial de WhatsApp.",
-    images: [withBasePath("/assets/images/thelast.png")],
+    images: [absolutePublicAsset("/assets/images/thelast.png")],
   },
 };
 

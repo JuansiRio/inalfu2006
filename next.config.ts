@@ -1,21 +1,20 @@
 import type { NextConfig } from "next";
 
-/** Sin slash inicial/final; p. ej. inalfu2006 para https://usuario.github.io/inalfu2006/ */
-const rawBase = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").trim();
-const basePath = rawBase ? `/${rawBase.replace(/^\/+|\/+$/g, "")}` : "";
+/**
+ * Solo para export estático en subruta (p. ej. GitHub Pages: /inalfu2006).
+ * Definir en CI (ver workflow). NO lo pongas en .env local: en desarrollo debe estar vacío.
+ */
+const raw = (process.env.NEXT_PUBLIC_SITE_BASE_PATH ?? "").trim();
+const segment = raw.replace(/^\/+|\/+$/g, "");
+const isDev = process.env.NODE_ENV === "development";
+const basePath = !isDev && segment ? `/${segment}` : "";
 
 const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true,
   },
-  ...(basePath
-    ? {
-        basePath,
-        assetPrefix: basePath,
-        trailingSlash: true,
-      }
-    : {}),
+  ...(basePath ? { basePath, trailingSlash: true } : {}),
 };
 
 export default nextConfig;
