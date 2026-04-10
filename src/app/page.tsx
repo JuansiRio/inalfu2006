@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Reveal } from "@/components/Reveal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Testimonials } from "@/components/Testimonials";
+import { withBasePath } from "@/lib/basePath";
 
 const EMPRENDIMIENTOS_ITEMS = [
   {
@@ -89,7 +90,7 @@ export default function Home() {
           <div className="mx-auto w-full max-w-5xl px-4 sm:px-6">
             <div className="relative mx-auto overflow-hidden rounded-2xl shadow-sm ring-1 ring-inalfu-200/30">
               <Image
-                src="/assets/images/thelast.png"
+                src={withBasePath("/assets/images/thelast.png")}
                 alt="The Last INALFU — 20 años después"
                 width={1200}
                 height={240}
@@ -172,7 +173,7 @@ export default function Home() {
             </Reveal>
             <Reveal className="relative min-h-[280px] aspect-[4/3] overflow-hidden rounded-2xl border border-inalfu-200 bg-white shadow-xl ring-1 ring-black/5 sm:min-h-[320px] md:aspect-square md:min-h-0">
               <Image
-                src="/assets/images/hero-colegio.png"
+                src={withBasePath("/assets/images/hero-colegio.png")}
                 alt="El colegio INALFU — lugar que nos vio crecer"
                 width={800}
                 height={600}
@@ -300,7 +301,7 @@ export default function Home() {
           <Reveal className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm sm:col-span-2 lg:col-span-2">
               <Image
-                src="/assets/images/galeria-1-fiesta.jpeg"
+                src={withBasePath("/assets/images/galeria-1-fiesta.jpeg")}
                 alt="Recuerdo del parche — fiesta y celebración"
                 width={1200}
                 height={800}
@@ -479,7 +480,7 @@ export default function Home() {
               © 2026 GuineoLab. Tecnología hecha a mano
             </span>
             <Image
-              src="/assets/images/Guineolabpng.png"
+              src={withBasePath("/assets/images/Guineolabpng.png")}
               alt="Guineo Lab"
               width={96}
               height={14}

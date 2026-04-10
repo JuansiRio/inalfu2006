@@ -61,4 +61,12 @@
   .reveal.is-visible {
     @apply translate-y-0 opacity-100;
   }
+
+  /* Si no hay JS, el contenido no debe quedar invisible (opacity-0). */
+  @media (scripting: none) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
 }

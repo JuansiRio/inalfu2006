@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
+import { withBasePath } from "@/lib/basePath";
 
 const navItems = [
   { href: "#sobre-el-encuentro", label: "Sobre el encuentro" },
@@ -36,7 +37,7 @@ export function SiteHeader() {
         >
           <span className="relative inline-flex h-9 w-9 shrink-0 overflow-hidden rounded-full ring-1 ring-slate-200/80">
             <Image
-              src="/assets/images/inalfu.jpg"
+              src={withBasePath("/assets/images/inalfu.jpg")}
               alt="Escudo INALFU"
               width={36}
               height={36}
