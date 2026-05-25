@@ -3,9 +3,21 @@ import { GalleryAlbum } from "@/components/GalleryAlbum";
 import { Reveal } from "@/components/Reveal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Testimonials } from "@/components/Testimonials";
+import { WhatsAppSelfChatLink } from "@/components/WhatsAppSelfChatLink";
 import { withBasePath } from "@/lib/basePath";
 
 const EMPRENDIMIENTOS_ITEMS = [
+  {
+    categoria: "Pirotecnia",
+    nombre: "Parafernalia, Poderes y Magia",
+    descripcionCorta:
+      "todo lo que necesitan para darse en la cabeza, zanahorios y degenerados",
+    servicios:
+      "Harry, Rosado, Weed, Flores, Fua, Manillas, Cocina Tradicional",
+    proveedor: "Confidencial",
+    whatsappSelf: true,
+    ctaWhatsapp: "Contacto confidencial por WhatsApp 🔥",
+  },
   {
     categoria: "Salud mental",
     nombre: "Psicología y Neuropsicología Infantil",
@@ -69,7 +81,7 @@ const EMPRENDIMIENTOS_ITEMS = [
     whatsapp: "573228483820",
     ctaWhatsapp: "Pide a domicilio por WhatsApp 🛵",
   },
-] as const;
+];
 
 export default function Home() {
   return (
@@ -413,14 +425,23 @@ export default function Home() {
                   <p className="pt-0.5 text-xs font-semibold text-inalfu-800">
                     {item.proveedor}
                   </p>
-                  <a
-                    href={`https://wa.me/${item.whatsapp}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-1 inline-flex w-fit text-xs font-semibold text-inalfu-600 underline-offset-2 transition hover:text-inalfu-800 hover:underline"
-                  >
-                    {item.ctaWhatsapp}
-                  </a>
+                  {"whatsappSelf" in item && item.whatsappSelf ? (
+                    <WhatsAppSelfChatLink
+                      prefill="Consulta confidencial — Parafernalia, Poderes y Magia"
+                      className="mt-1 inline-flex w-fit text-xs font-semibold text-inalfu-600 underline-offset-2 transition hover:text-inalfu-800 hover:underline"
+                    >
+                      {item.ctaWhatsapp}
+                    </WhatsAppSelfChatLink>
+                  ) : (
+                    <a
+                      href={`https://wa.me/${"whatsapp" in item ? item.whatsapp : ""}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 inline-flex w-fit text-xs font-semibold text-inalfu-600 underline-offset-2 transition hover:text-inalfu-800 hover:underline"
+                    >
+                      {item.ctaWhatsapp}
+                    </a>
+                  )}
                 </Reveal>
               ))}
             </div>
