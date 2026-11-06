@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { GalleryAlbum } from "@/components/GalleryAlbum";
+import { PagosSheet } from "@/components/PagosSheet";
 import { Reveal } from "@/components/Reveal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Testimonials } from "@/components/Testimonials";
@@ -376,6 +377,8 @@ export default function Home() {
             </ul>
           </div>
         </section>
+
+        <PagosSheet />
 
         <section
           id="anecdotas"

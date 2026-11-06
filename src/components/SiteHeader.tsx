@@ -10,6 +10,7 @@ const navItems = [
   { href: "#crush", label: "Crush" },
   { href: "#galeria", label: "Galería" },
   { href: "#evento", label: "Evento" },
+  { href: "#aportes", label: "Aportes" },
   { href: "#anecdotas", label: "Anécdotas" },
   { href: "#emprendimientos", label: "Emprendimientos" },
   { href: "#whatsapp", label: "WhatsApp" },
